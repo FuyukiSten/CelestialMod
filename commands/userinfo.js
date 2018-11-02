@@ -2,7 +2,7 @@ const moment = require('moment');
 const Discord = require('discord.js');
 exports.run = (client, msg, args) => {
   const embed = new Discord.RichEmbed();
-  embed.addField("Username", `${msg.author.username}#${msg.author.discriminator}`, true)
+  embed.addField("Usuário", `${msg.author.username}#${msg.author.discriminator}`, true)
           .addField("ID", `${msg.author.id}`, true)
           .setColor(3447003)
           .setFooter(' ', ' ')
@@ -31,6 +31,6 @@ exports.conf = {
 
 exports.help = {
   name: 'userinfo',
-  description: 'Displays information about a user.',
+  description: 'Informações sobre o usuario mencionado.',
   usage: 'userinfo <@user>'
 };
