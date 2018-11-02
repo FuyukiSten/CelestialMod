@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
   if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("Não.");
   let wUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
   if(!wUser) return message.reply("Quem >//< ?");
-  if(!wUser.hasPermission("MANAGE_MESSAGES")) return message.reply("Não.");
+  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Não.");
 	let reason = args.slice(1).join(" ");
 
 
@@ -37,79 +37,105 @@ module.exports.run = async (bot, message, args) => {
 
   if(warns[wUser.id].warns == 1){
     let muterole = message.guild.roles.find(`name`, "Muted/Cantinho da Vergonha");
+    //1.º Advertência.
+    let advrole = message.guild.roles.find(`name`, "1.º Advertência.");
     if(!muterole) return message.reply("Cargo não encontrado");
 
     await(wUser.addRole(muterole.id));
+    await(wUser.addRole(advrole.id));
 
 
     setTimeout(function(){
       wUser.removeRole(muterole.id)
+      wUser.removeRole(advrole.id)
     }, 900000)
   }
   if(warns[wUser.id].warns == 2){
     let muterole = message.guild.roles.find(`name`, "Muted/Cantinho da Vergonha");
     if(!muterole) return message.reply("Cargo não encontrado");
+    let advrole = message.guild.roles.find(`name`, "2.º Advertência.");
 
     await(wUser.addRole(muterole.id));
-
+    await(wUser.addRole(advrole.id));
 
     setTimeout(function(){
       wUser.removeRole(muterole.id)
+      wUser.removeRole(advrole.id)
+
     }, 1000 * 10800)
   }
   if(warns[wUser.id].warns == 3){
     let muterole = message.guild.roles.find(`name`, "Muted/Cantinho da Vergonha");
     if(!muterole) return message.reply("Cargo não encontrado");
+    let advrole = message.guild.roles.find(`name`, "3.º Advertência.");
 
     await(wUser.addRole(muterole.id));
+    await(wUser.addRole(advrole.id));
 
 
     setTimeout(function(){
       wUser.removeRole(muterole.id)
+      wUser.removeRole(advrole.id)
+
     }, 1000 * 21600)
   }
   if(warns[wUser.id].warns == 4){
     let muterole = message.guild.roles.find(`name`, "Muted/Cantinho da Vergonha");
     if(!muterole) return message.reply("Cargo não encontrado");
+    let advrole = message.guild.roles.find(`name`, "4.º Advertência.");
 
     await(wUser.addRole(muterole.id));
 
 
     setTimeout(function(){
       wUser.removeRole(muterole.id)
+      wUser.removeRole(advrole.id)
+
     }, 1000 * 32400)
   }
   if(warns[wUser.id].warns == 5){
     let muterole = message.guild.roles.find(`name`, "Muted/Cantinho da Vergonha");
     if(!muterole) return message.reply("Cargo não encontrado");
+    let advrole = message.guild.roles.find(`name`, "5.º Advertência.");
 
     await(wUser.addRole(muterole.id));
+    await(wUser.addRole(advrole.id));
 
 
     setTimeout(function(){
       wUser.removeRole(muterole.id)
+      wUser.removeRole(advrole.id)
+
     }, 1000 * 86400)
   }
   if(warns[wUser.id].warns == 6){
     let muterole = message.guild.roles.find(`name`, "Muted/Cantinho da Vergonha");
     if(!muterole) return message.reply("Cargo não encontrado");
+    let advrole = message.guild.roles.find(`name`, "6.º Advertência.");
 
     await(wUser.addRole(muterole.id));
+    await(wUser.addRole(advrole.id));
 
 
     setTimeout(function(){
       wUser.removeRole(muterole.id)
+      wUser.removeRole(advrole.id)
+
     }, 1000 * 172800)
   }
   if(warns[wUser.id].warns == 7){
     let muterole = message.guild.roles.find(`name`, "Muted/Cantinho da Vergonha");
     if(!muterole) return message.reply("Cargo não encontrado");
+    let advrole = message.guild.roles.find(`name`, "7.º Advertência.");
 
     await(wUser.addRole(muterole.id));
+    await(wUser.addRole(advrole.id));
 
 
     setTimeout(function(){
       wUser.removeRole(muterole.id)
+      wUser.removeRole(advrole.id)
+
     }, 1000 * 259200)
   }
   if(warns[wUser.id].warns == 8){
