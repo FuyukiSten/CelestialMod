@@ -25,7 +25,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'adicionarcargo',
+  name: 'addrole',
   description: 'Adiciona um cargo ao usuario mencionado.',
-  usage: 'adicionarcargo <@user> <cargo>'
+  usage: 'addrole <@user> <cargo>'
 };
