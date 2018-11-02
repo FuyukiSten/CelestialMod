@@ -1,0 +1,28 @@
+{
+    "helpMsg1": [
+        "**Prefix é c!**",
+        "```Comandos de moderação```",
+        "**ban** - Bane um usuario",
+        "**unban** - Desabne um usuario",
+        "**kick** - Expulsa um usuario",
+        "**mute** - Silencia um usuario",
+        "**adv** - Da um adv ao usuario (EM BREVE)",
+        "**lockdown** - Impede que os membros falem nesse canal por um determinado tempo",
+        "**addrole** - Adiciona um cargo para o membro mencionado",
+        "**removerole** - Remove um cargo"
+      ],
+    "helpMsg2": [
+      "```Comandos uteis```",
+      "**avatar** - Mostra o avatar de um usuario",
+      "**serverinfo** - Informações sobre o servidor",
+      "**uptime** - Quanto tempo o bot esta online",
+      "**info** - Informações sobre o bot",
+      "**userinfo** - Informações sobre o usuario"
+      ],
+    "helpMsg4": [
+      "```Comandos para o dono apenas```",
+      "**eval** - Evaluates a string",
+      "**exec** - Executes a process command",
+      "**reload** - Reloads a command"
+    ]
+}
