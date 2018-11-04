@@ -4,7 +4,7 @@ module.exports = member => {
     const moment = require('moment');
     moment.locale('pt-BR');
 let _c = client.channels.get("489929853362241566");
-if(_c) return console.log("Canal com o ID <489929853362241566> não foi localizado.");
+if(!_c) return console.log("Canal com o ID <489929853362241566> não foi localizado.");
 const moment = require('moment');
     moment.locale('pt-BR');
     let usuario = member
