@@ -25,9 +25,7 @@ fs.readdir('./commands/', (err, files) => {
   });
 });
 client.on("guildMemberAdd", member => {
-    const moment = require('moment');
-    moment.locale('pt-BR');
-let _c = client.channels.get("489929853362241566");
+let _c = client.channels.get("508379518881497088");
 if(!_c) return console.log("Canal com o ID <489929853362241566> não foi localizado.");
     moment.locale('pt-BR');
     let usuario = member
