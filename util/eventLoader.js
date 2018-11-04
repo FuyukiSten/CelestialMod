@@ -4,4 +4,5 @@ module.exports = client => {
   client.on('reconnecting', () => reqEvent('reconnecting')(client));
   client.on('disconnect', () => reqEvent('disconnect')(client));
   client.on('message', reqEvent('message'));
+  client.on('guildMemberAdd.js', reqEvent('guildMemberAdd')(client)):
 };
