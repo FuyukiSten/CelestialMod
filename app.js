@@ -29,7 +29,6 @@ client.on("guildMemberAdd", member => {
     moment.locale('pt-BR');
 let _c = client.channels.get("489929853362241566");
 if(!_c) return console.log("Canal com o ID <489929853362241566> não foi localizado.");
-const moment = require('moment');
     moment.locale('pt-BR');
     let usuario = member
     let cor = 0x4286f4;       
