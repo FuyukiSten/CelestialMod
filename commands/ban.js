@@ -4,12 +4,12 @@ exports.run = (client, message, args) => {
   let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
   let logchannel = message.guild.channels.find('name', 'logs');
-  if (!logchannel) return message.reply('I cannot find a logs channel');
+  if (!logchannel) return message.reply('Não encontrei um canal de logs');
   if (!message.member.hasPermission("BAN_MEMBERS")) return msg.reply(":no_entry_sign: **Error:** You don't have the **Ban Members** permission!");
-  if (reason.length < 1) return message.reply('You must supply a reason for the ban.');
-  if (message.mentions.users.size < 1) return message.reply('You must mention someone to ban them.').catch(console.error);
+  if (reason.length < 1) return message.reply('Motivo ?');
+  if (message.mentions.users.size < 1) return message.reply('Quem ?').catch(console.error);
 
-  if (!message.guild.member(user).bannable) return message.reply(`<:redTick:${settings.redTick}> I cannot ban that member`);
+  if (!message.guild.member(user).bannable) return message.reply(`Não posso fazer isso.`);
   message.guild.member(user).ban();
 
   const embed = new Discord.RichEmbed()
