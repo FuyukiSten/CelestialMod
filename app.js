@@ -4,6 +4,7 @@ const settings = require('./settings.json');
 const chalk = require('chalk');
 const fs = require('fs');
 const reg = JSON.parse(fs.readFileSync("./registrados.json", "utf8"));
+client.registrados = reg;
 const moment = require('moment');
 require('./util/eventLoader')(client);
 //
