@@ -92,4 +92,4 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 // });
 
 
-client.login(settings.token);
+client.login(process.env.TOKEN);
