@@ -1,16 +1,16 @@
 const Discord = require('discord.js');
 const fs = require('fs');
 const sql = require("sqlite");
-sql.open("./database/regdatabase.sql");
+sql.open("./regdatabase.sql");
 
 const moment = require('moment');
 exports.run = async (client, message, args) => {
     // eu ia fazer comentarios sobre como funciona tudo aq mas, deu uma preguiça né
-    if(!message.member.roles.some(r=>["❪📁❯ Equipe de Registro ★"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Organizadores Especiais"].includes(r.name)) )
     {
         let _e = new Discord.RichEmbed();
         _e.setColor(0xff3232);
-        _e.setDescription(`${message.author}, você precisa ter o cargo <@&513187405319110669> para usar esse comando.`);
+        _e.setDescription(`${message.author}, você precisa ter o cargo <@&455796553291005992> para usar esse comando.`);
         client.channels.get(message.channel.id).send(_e);
         return;
     }
