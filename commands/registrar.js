@@ -49,3 +49,16 @@ exports.run = async (client, message, args) => {
         client.channels.get(message.channel.id).send(A_3);
     }  
 }
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'registrar',
+  description: 'registra o membro mencionado',
+  usage: 'registrar @membro'
+};
