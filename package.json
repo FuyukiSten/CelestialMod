@@ -2,10 +2,10 @@
   "name": "Mod-Bot",
   "version": "2.1.1",
   "description": "Mod Bot",
-  "main": "node app.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node ."
   },
   "engines": { "node": "8.4.0" },
   "author": "OGNovuh",
