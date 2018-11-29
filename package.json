@@ -1,6 +1,9 @@
 {
   "name": "Mod-Bot",
   "version": "2.1.1",
+  "engines": {
+    "node": "10.3.0"
+  },
   "description": "Mod Bot",
   "main": "node app.js",
   "scripts": {
