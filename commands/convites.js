@@ -30,3 +30,16 @@ exports.run = async (client, message, args) => {
     embed.setThumbnail(message.author.avatarURL)
     _c.send(embed);
     })} // kibado de um github, nao lembro qualkkkkkkkkkkk
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'convites',
+  description: 'quantia de convites',
+  usage: 'convites '
+};
