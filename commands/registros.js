@@ -27,3 +27,16 @@ exports.run = async (client, message, args) => {
     client.channels.get(message.channel.id).send(embed);
 });
 }
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'registros',
+  description: 'quantia de registros',
+  usage: 'registros'
+};
